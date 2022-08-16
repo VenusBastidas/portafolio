@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url('../img/65023-carnival-photography-ferris-wheel-pastel-decor-vintage-photography.jpg');
+    background-position: auto;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;    
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 5px #616183;
+}
+header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 2vw 5vw;
+    position: relative;
+}
+
+#navbar{
+    position: absolute;
+    top: -10000px;
+    background-color: #b0c9a0;
+    padding: 7rem;
+    border-radius: 50%;
+}
+.menu-activo{
+    top: 0;
+}
+#home p{
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 20px;
+    color: #40493a;
+    max-width: 40vw;
+}
+#home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span{
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+.profilePic{
+    border-radius: 50% 50%;
+    width: 25vw;
+    height: auto;
+}
+
+.socialMedia img {
+    width: 50px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.socialMedia img:hover{
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 800px) {
+    .profilePic {
+        width: 45vw;
+        height: 45vh;
+    }
+}    
+@media screen and (max-width: 600px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #home p{
+        max-width: 75vw;
+    }
+    .socialMedia {
+        width: 80vw;
+    }
+    .profilePic {
+        width: 55vw;
+    }
+}
+#portafolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#portafolio img:hover{
+    transform: rotate(5deg) scale(0.9);
+    opacity: 0.8;
+}
+
+#portafolio img {
+    width: 30vw;
+    height: auto;
+    border: 5px solid #fff;
+    border-radius: 10px 10px;
+}
+@media screen and (max-width: 600px) {
+    #portafolio {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    #portafolio img{
+        width: 75vw;
+    }
+}
+
+a, li, i{
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    list-style: none;
+}
+
+li:hover, i:hover, h3:hover, h1:hover{
+    text-shadow: 2px 2px 2px #616183;
+}
+
+footer {
+    background-color: #fff;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+}
+footer p{
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive; 
+    padding: 1rem; 
+    color: #616f58 ;
+}
+
+footer p:hover{
+    text-shadow: 2px 2px 2px #616f58;
+}
+@media screen and (max-width: 600px) {
+    footer{
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0
+    }
+    footer p{
+        padding: 0;
+        margin: 0;
+    }
+    .break{
+        display: none;
+    }
+}
